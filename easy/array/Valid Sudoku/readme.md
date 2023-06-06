@@ -10,13 +10,23 @@ We need a function to determine if a 9 x 9 Sudoku board is valid. The validation
 
 - A Sudoku board (partially filled) could be valid but is not necessarily solvable.
 - Only the filled cells need to be validated according to the mentioned rules.
+- Input: array [][]
+- Output: boolean
+
+**Constraints:**
+- board.length == 9
+- board[i].length == 9
+- board[i][j] is a digit 1-9 or '.'
+
 
 ## Example 1
 
-**Input:**
+**Input:** </br></br>
+![image](https://github.com/pologora/leetTopInterview/assets/36567285/3b1538cb-4815-4f71-b98e-e5fce0fc1764)
 
-```python
-board = [
+
+```javascript
+const board = [
     ["5","3",".",".","7",".",".",".","."],
     ["6",".",".","1","9","5",".",".","."],
     [".","9","8",".",".",".",".","6","."],
@@ -35,8 +45,8 @@ Example 2:
 
 Input:
 
-```python
-board = [
+```javascript
+const board = [
     ["8","3",".",".","7",".",".",".","."],
     ["6",".",".","1","9","5",".",".","."],
     [".","9","8",".",".",".",".","6","."],
