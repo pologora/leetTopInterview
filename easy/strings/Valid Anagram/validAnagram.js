@@ -1,5 +1,5 @@
 module.exports = (s, t) => {
-  if (!s || !t) return false;
+  if (s.length !== t.length) return false;
   const hashTable = {};
 
   for (let i = 0; i < s.length; i++) {
